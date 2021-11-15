@@ -55,7 +55,7 @@ label.validation-error{
 }
 
 @media (max-width: 360px) { 
-    td,th{
+    td{
         display: inline-block;
     }
 }
