@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,45 +8,50 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Registro de empleados</title>
 </head>
-<body>
-    <table>
-        <tr>
-            <td>
-               <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
-                   <div>
-                    <label for="">Código</label><label class="validation-error hide" id="codigoValidationError">Este campo es obligatorio</label>
-                    <input type="text" name = "codigo" id="codigo"> 
-                   </div>
-                   <div>
-                    <label for="">Nombre</label>
-                    <input type="text" name = "nombre" id="nombre"> 
-                   </div>
-                   <div>
-                    <label for="">Lugar de nacimiento</label>
-                    <input type="text" name = "lugar-nac" id="lugar-nac"> 
-                   </div>
-                   <div class="form-action-buttons">
-                       <input type="submit" value="Guardar">
-                   </div>
-               </form>
-            </td>
-            <td>
-                <table class="list" id="employe-list">
-                    <thead>
-                        <tr>
-                            <th>Código</th>
-                            <th>Nombre</th>
-                            <th>Lugar de nac</th>
-                            <th> </th>
-                        </tr>
-                    </thead>
-                    <tbody>
 
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </table>
+<body>
+    <div class="contenedor">
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label for="">Código</label><label class="validation-error hide"
+                                id="codigoValidationError">Este campo es obligatorio</label>
+                            <input type="text" name="codigo" id="codigo">
+                        </div>
+                        <div>
+                            <label for="">Nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+                        <div>
+                            <label for="">Lugar de nacimiento</label>
+                            <input type="text" name="lugar-nac" id="lugar-nac">
+                        </div>
+                        <div class="form-action-buttons">
+                            <input type="submit" value="Guardar">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="employe-list">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Nombre</th>
+                                <th>Lugar de nac</th>
+                                <th> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
