@@ -53,3 +53,9 @@ label.validation-error{
 .hide{
     display:none;
 }
+
+@media (max-width: 360px) { 
+    td,th{
+        display: inline-block;
+    }
+}
